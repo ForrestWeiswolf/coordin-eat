@@ -25,6 +25,11 @@ const Trip = db.define('trip', {
 	},
 	yelpString: {
 		type: Sequelize.STRING(10000),
+	},
+	accountless: {
+		type: Sequelize.BOOLEAN,
+		defaultValue: false,
+		allowNull: false,
 	}
 },{
 	getterMethods: {
